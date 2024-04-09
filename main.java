@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,7 +16,7 @@ public class Main {
         }
 
         // Sorting the array using bubble sort
-        Sort.bubbleSort(array);
+        sort.bubbleSort(array);
 
         // Displaying the sorted array
         System.out.println("Sorted Array:");
