@@ -5,12 +5,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Input the number of elements in the array
-        System.out.print("Enter the number of elements: ");
+        System.out.print("Please write the number of elements you want: ");
         int n = scanner.nextInt();
 
         // Input the elements
         int[] array = new int[n];
-        System.out.println("Enter the elements:");
+        System.out.println("Now type the elements:");
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
         }
@@ -26,7 +26,7 @@ public class Main {
         System.out.println();
 
         // Performing Linear Search
-        System.out.print("Enter the number to search: ");
+        System.out.print("You can now do search. Please enter the number: ");
         int searchKey = scanner.nextInt();
         int index = Search.linearSearch(array, searchKey);
         if (index != -1) {
