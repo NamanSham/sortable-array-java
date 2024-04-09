@@ -15,10 +15,27 @@ public class Main {
             array[i] = scanner.nextInt();
         }
 
-        // Display the entered elements
-        System.out.println("Entered elements:");
+        // Sorting the array using bubble sort
+        Sort.bubbleSort(array);
+
+        // Displaying the sorted array
+        System.out.println("Sorted Array:");
         for (int i = 0; i < n; i++) {
             System.out.print(array[i] + " ");
         }
+        System.out.println();
+
+        // Performing Linear Search
+        System.out.print("Enter the number to search: ");
+        int searchKey = scanner.nextInt();
+        int index = Search.linearSearch(array, searchKey);
+        if (index != -1) {
+            System.out.println("Element found at index: " + index);
+        } else {
+            System.out.println("Element not found.");
+        }
+        
+        // Close the scanner to prevent resource leak
+        scanner.close();
     }
 }
